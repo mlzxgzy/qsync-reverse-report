@@ -1,0 +1,6358 @@
+[
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "delete_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filename",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "download_link",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file_total",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "ssids",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%ls&filename=%ls&download_link=%ls&file_total=%d",
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%ls&ssids=%ls&file_total=%d",
+   "%s%s:%d/%scgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%s&filename=%s&download_link=%s&file_total=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_share_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=get_share_link&sid=%ls",
+   "%s%s:%d/%scgi-bin/filemanager/utilRequest.cgi?func=get_share_link&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_share_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dir",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "limit",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sort",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "start",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=get_share_list&sid=%ls&dir=ASC&limit=%d&sort=filename&start=%d",
+   "%s%s:%d/%scgi-bin/filemanager/utilRequest.cgi?func=get_share_list&sid=%s&dir=ASC&limit=%d&sort=filename&start=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "send_share_mail",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=send_share_mail&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "share_file",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=share_file&sid=%ls",
+   "%s%s:%d/%scgi-bin/filemanager/utilRequest.cgi?func=share_file&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "update_link",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=update_link&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/filemanager/utilRequest.cgi",
+  "func": "update_share_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/filemanager/utilRequest.cgi?func=update_share_link&sid=%ls",
+   "%s%s:%d/%scgi-bin/filemanager/utilRequest.cgi?func=update_share_link&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": null,
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "activate",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "token",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=activate&token=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "chunked_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "rename_dest",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=chunked_upload&sid=%ls&upload_id=%ls&settime=1&mtime=%ls&offset=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&rename_dest=%ls&upload_root_dir=%ls%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=chunked_upload&sid=%ls&upload_id=%ls&settime=1&mtime=%ls&offset=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&upload_root_dir=%ls%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=chunked_upload&sid=%s&upload_id=%s&settime=1&mtime=%s&offset=%s&filesize=%s&dest_path=%s&overwrite=%d&rename_dest=%s&upload_root_dir=%s%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "createdir",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_folder",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=createdir&sid=%ls&dest_folder=%ls&dest_path=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=createdir&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "daemon_list",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "subfunc",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=daemon_list&sid=%ls&subfunc=delete&pid=%d",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=daemon_list&sid=%s&subfunc=delete&pid=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "delete",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=delete&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=delete&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "delete_chunked_upload_file",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=delete_chunked_upload_file&sid=%ls&upload_id=%ls&upload_root_dir=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=delete_chunked_upload_file&sid=%s&upload_id=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "download",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=download"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_backup_file_list",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filter",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "timestamp",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "show_deleted",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "limit",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "start",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_backup_file_list&sid=%ls&source_path=%ls&filter=%ls&timestamp=%ls&show_deleted=%d&limit=%d&start=%d%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_chunked_upload_status",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_chunked_upload_status&sid=%ls&upload_id=%ls&upload_root_dir=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=get_chunked_upload_status&sid=%s&upload_id=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_list",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "is_iso",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "list_mode",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dir",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "limit",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sort",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "start",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "hidden_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "type",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "no_sort",
+    "types": [
+     "int",
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_list&sid=%ls&is_iso=0&list_mode=all&path=%ls&dir=%ls&limit=%d&sort=%ls&start=%d&no_sort=%d",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_list&sid=%ls&is_iso=0&list_mode=all&path=%ls&dir=%ls&limit=%d&sort=%ls&start=%d&type=4&no_sort=%d%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=get_list&sid=%s&is_iso=0&list_mode=all&path=%s&dir=%s&limit=%d&sort=%s&start=%d&hidden_file=1%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_move_status",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_move_status&sid=%ls&pid=%d",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=get_move_status&sid=%s&pid=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_tree",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "is_iso",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "node",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=get_tree&sid=%ls&is_iso=0&node=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=get_tree&sid=%s&is_iso=0&node=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "move",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "no_fork",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=move&sid=%ls&no_fork=%d",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=move&sid=%s&no_fork=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "properties",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "name",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=properties&sid=%ls&path=%ls&total=1&name=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=properties&sid=%s&path=%s&total=1&name=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_check_permission",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "check_upload",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "file_name",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_check_permission&sid=%ls&path=%ls&file_name=%ls&check_upload=1",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_check_permission&sid=%s&path=%s&check_upload=1"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_max_log",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_max_log&sid=%s",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_max_log&sid=%s&folder=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_nas_status",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "check_detail",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_nas_status&sid=%ls&check_detail=%d",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_nas_status&sid=%s&check_detail=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_progress",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_progress&sid=%ls&pid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_progress&sid=%s&pid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_qbox_info",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_qbox_info&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_qbox_info&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_quota_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_quota_info&sid=%ls%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_quota_info&sid=%s%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_static_information",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_static_information&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_static_information&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_sync_log",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "syncing_folder",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "get_detail",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sub_folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_sync_log&sid=%ls&lower=%ls&number=%d&syncing_folder=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_sync_log&sid=%s&lower=%s&number=%d&syncing_folder=%s&get_detail=1&sub_folder=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_user_home",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_user_home&sid=%ls&user=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_user_home&sid=%s&user=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_veto_files",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_veto_files&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_veto_files&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_rename_device",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=qbox_rename_device"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "rename",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=rename&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=rename&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "repository_recovery",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "versioning_version",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=repository_recovery&sid=%s&source_file=%s&mode=%d&source_path=%s&version_id=%s&dest_path=%s&versioning_version=1"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "start_chunked_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "check_qbox_file_profile",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "check_qbox_file_exist",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "check_qbox_file_type",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "check_qbox_file_path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=start_chunked_upload&sid=%ls&upload_root_dir=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=start_chunked_upload&sid=%s&upload_root_dir=%s",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=start_chunked_upload&sid=%s&upload_root_dir=%s&check_qbox_file_profile=1&check_qbox_file_exist=%d&check_qbox_file_type=0&check_qbox_file_path=%s%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "stat",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file_total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "file_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "get_privilege",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=stat&path=%ls&file_total=1&file_name=%ls&get_privilege=1%ls&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=stat&path=%ls&file_total=1&file_name=%ls&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=stat&sid=%ls&settime=1&mtime=%ls&path=%ls&file_total=1&file_name=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "trash_recovery",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "source_total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=trash_recovery&sid=%ls&source_file=%ls&mode=%d&source_total=1&source_path=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=trash_recovery&sid=%s&source_file=%s&mode=%d&source_total=1&source_path=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=upload&sid=%ls&dest_path=%ls&overwrite=%d",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=upload&sid=%s&dest_path=%s&overwrite=%d"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "upload_and_move",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "rename_dest",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "check_qbox_file_profile",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "check_qbox_file_exist",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "check_qbox_file",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=upload_and_move&sid=%ls&settime=1&mtime=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&rename_dest=%ls&upload_root_dir=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=upload_and_move&sid=%ls&settime=1&mtime=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&upload_root_dir=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=upload_and_move&sid=%s&settime=1&mtime=%s&filesize=%s&dest_path=%s&overwrite=%d&rename_dest=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_clean_version",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_clean_version&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_clean_version&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_commit_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_commit_upload&sid=%ls&settime=1&mtime=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_commit_upload&sid=%s&settime=1&mtime=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_delete_all",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_delete_all&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_gen_delta",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_gen_delta&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_gen_delta&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_gen_file",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_gen_file&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_gen_sig",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_gen_sig&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_gen_sig&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_get_delta",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_get_delta&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s&offset=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_get_progress",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_get_progress&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_get_sig",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_get_sig&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_lock",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "check_version",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "create_version",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_lock&check_version=1&sid=%ls&source_path=%ls&source_file=%ls&version_id=%ls&lockid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_lock&create_version=1&sid=%ls&source_path=%ls&source_file=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_lock&check_version=1&sid=%s&source_path=%s&source_file=%s&version_id=%s&lockid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_probe",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_probe&sid=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_stat",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_stat&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_stat&source_path=%ls&source_file=%ls&sid=%ls%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_stat_delta",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_stat_delta&sid=%ls&source_path=%ls&source_file=%ls&version_id=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_stat_delta&sid=%s&source_path=%s&source_file=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_unlock",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.cgi?func=versioning_unlock&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_unlock&sid=%s&source_path=%s&source_file=%s&lockid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.cgi",
+  "func": "versioning_upload_file",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "versioning_version",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.cgi?func=versioning_upload_file&sid=%s&dest_path=%s&overwrite=%d&version_id=%s&versioning_version=1&source_file=%s&offset=%s&upload_name=%s&filesize=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.fcgi",
+  "func": "qbox_get_max_log",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.fcgi?func=qbox_get_max_log&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.fcgi?func=qbox_get_max_log&sid=%ls&folder=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.fcgi?func=qbox_get_max_log&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrv.fcgi",
+  "func": "stat",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file_total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "file_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "get_privilege",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.fcgi?func=stat&path=%ls&file_total=1&file_name=%ls&get_privilege=1%ls&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrv.fcgi?func=stat&path=%ls&file_total=1&file_name=%ls&sid=%ls",
+   "%s%s:%d/%scgi-bin/qsync/qsyncsrv.fcgi?func=stat&path=%s&file_total=1&file_name=%s&get_privilege=1%s&sid=%s"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrvPrepare.cgi",
+  "func": "activate",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "token",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrvPrepare.cgi?func=activate&token=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/qsyncsrvPrepare.cgi",
+  "func": "qbox_get_max_log",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrvPrepare.cgi?func=qbox_get_max_log&sid=%ls",
+   "%ls%ls:%d/%lscgi-bin/qsync/qsyncsrvPrepare.cgi?func=qbox_get_max_log&sid=%ls&folder=%ls"
+  ]
+ },
+ {
+  "path": "/%scgi-bin/qsync/upload.php",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/%lscgi-bin/qsync/upload.php",
+   "%s%s:%d/%scgi-bin/qsync/upload.php"
+  ]
+ },
+ {
+  "path": "/cgi-bin/application/appRequest.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "subfunc",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "apply",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/application/appRequest.cgi?subfunc=qpkg&apply=10&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/authLogin.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/authLogin.cgi"
+  ]
+ },
+ {
+  "path": "/cgi-bin/authLogin.cgi",
+  "func": "passwordless",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "op",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/authLogin.cgi?func=passwordless&op=8"
+  ]
+ },
+ {
+  "path": "/cgi-bin/authLogout.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "logout",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/authLogout.cgi?sid=%s&logout=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/qsyncPrepare.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/qsyncPrepare.cgi?user=%ls",
+   "%s%s:%d/cgi-bin/filemanager/qsyncPrepare.cgi?user=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/qsyncPrepare.cgi",
+  "func": "qbox_get_max_log",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/qsyncPrepare.cgi?func=qbox_get_max_log&sid=%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/qsyncPrepare.cgi?func=qbox_get_max_log&sid=%ls&folder=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/upload.php",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/upload.php",
+   "%s%s:%d/cgi-bin/filemanager/upload.php"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "chunked_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "rename_dest",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=chunked_upload&sid=%ls&upload_id=%ls&settime=1&mtime=%ls&offset=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&rename_dest=%ls&upload_root_dir=%ls%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=chunked_upload&sid=%ls&upload_id=%ls&settime=1&mtime=%ls&offset=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&upload_root_dir=%ls%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=chunked_upload&sid=%s&upload_id=%s&settime=1&mtime=%s&offset=%s&filesize=%s&dest_path=%s&overwrite=%d&rename_dest=%s&upload_root_dir=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "createdir",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_folder",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=createdir&sid=%ls&dest_folder=%ls&dest_path=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=createdir&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "daemon_list",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "subfunc",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=daemon_list&sid=%ls&subfunc=delete&pid=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=daemon_list&sid=%s&subfunc=delete&pid=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "delete",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "delete_chunked_upload_file",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete_chunked_upload_file&sid=%ls&upload_id=%ls&upload_root_dir=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete_chunked_upload_file&sid=%s&upload_id=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "delete_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filename",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "download_link",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file_total",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "ssids",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%ls&filename=%ls&download_link=%ls&file_total=%d",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%ls&ssids=%ls&file_total=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=delete_share&sid=%s&filename=%s&download_link=%s&file_total=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "download",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=download"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_ad_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_ad_info&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_ad_info&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_chunked_upload_status",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_chunked_upload_status&sid=%ls&upload_id=%ls&upload_root_dir=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_chunked_upload_status&sid=%s&upload_id=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_domain_ip_list",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_domain_ip_list&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_domain_ip_list&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_list",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "is_iso",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "list_mode",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dir",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "limit",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sort",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "start",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "hidden_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "type",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "no_sort",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_list&sid=%ls&is_iso=0&list_mode=all&path=%ls&dir=%ls&limit=%d&sort=%ls&start=%d&no_sort=%d",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_list&sid=%ls&is_iso=0&list_mode=all&path=%ls&dir=%ls&limit=%d&sort=%ls&start=%d&type=4&no_sort=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_list&sid=%s&is_iso=0&list_mode=all&path=%s&dir=%s&limit=%d&sort=%s&start=%d&hidden_file=1%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_move_status",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_move_status&sid=%ls&pid=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_move_status&sid=%s&pid=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_share_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_share_link&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_share_link&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_share_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dir",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "limit",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sort",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "start",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_share_list&sid=%ls&dir=ASC&limit=%d&sort=filename&start=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_share_list&sid=%s&dir=ASC&limit=%d&sort=filename&start=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_sys_setting",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_sys_setting&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_sys_setting&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_thumb",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "size",
+    "types": [
+     "uint"
+    ]
+   },
+   {
+    "name": "option",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_thumb&sid=%s&path=%s&name=%s&size=%u&option=3"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "get_tree",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "is_iso",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "node",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_tree&sid=%ls&is_iso=0&node=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=get_tree&sid=%s&is_iso=0&node=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "move",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=move&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=move&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "properties",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "name",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=properties&sid=%ls&path=%ls&total=1&name=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=properties&sid=%s&path=%s&total=1&name=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_accept_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_id",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_accept_share&sid=%ls&event_id=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_accept_share&sid=%s&event_id=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_auth_config_password",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "password",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_auth_config_password&sid=%ls&password=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_auth_config_password&sid=%s&password=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_check_permission",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "check_upload",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "file_name",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_check_permission&sid=%ls&path=%ls&file_name=%ls&check_upload=1",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_check_permission&sid=%s&path=%s&check_upload=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_deny_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_id",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_deny_share&sid=%ls&event_id=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_deny_share&sid=%s&event_id=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_find_share",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_find_share&sid=%ls&file=%ls&lower=%d&upper=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_fix_team_folder_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_fix_team_folder_link&sid=%ls&path=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_fix_team_folder_link&sid=%s&path=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_config_acl",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_config_acl&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_config_acl&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_device_config",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_device_config&sid=%ls&device_uid=%ls%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_device_config&sid=%s&device_uid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_device_config_list",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_device_config_list&sid=%ls&user=%ls&lower=%d&upper=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_last_modify_time",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_last_modify_time&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_max_log",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_max_log&sid=%s",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_max_log&sid=%s&folder=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_my_event",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_my_event&sid=%ls&event_type=%d&lower=%d&upper=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_my_event&sid=%s&event_type=%d&lower=%d&upper=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_nas_status",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_nas_status&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_nas_status&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_nas_uid",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_nas_uid&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_nas_uid&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_policy",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_policy&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_policy&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_progress",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "pid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_progress&sid=%ls&pid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_progress&sid=%s&pid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_qbox_info",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_qbox_info&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_qbox_info&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_quota_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_quota_info&sid=%ls%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_quota_info&sid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_recycle_bin_status",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_recycle_bin_status&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_recycle_bin_status&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_share_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_info&sid=%ls&file=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_info&sid=%s&file=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_share_member",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "all_user",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "refresh",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "netbios",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "domain",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filter",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_member&sid=%ls&user_type=%d&share_id=%ls&lower=%d&upper=%d&all_user=%d&refresh=%d&netbios=%ls&domain=%ls&filter=%ls%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_member&sid=%s&user_type=%d&share_id=%s&lower=%d&upper=%d&all_user=%d&refresh=%d&netbios=%s&domain=%s&filter=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_share_path",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_path&sid=%ls&share_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_share_path&sid=%s&share_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_static_information",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_static_information&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_static_information&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_sync_log",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "syncing_folder",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "sub_folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_sync_log&sid=%ls&lower=%ls&number=%d",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_sync_log&sid=%ls&lower=%ls&number=%d&syncing_folder=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_sync_log&sid=%s&lower=%s&number=%d&sub_folder=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_syncing_folder_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_syncing_folder_list&sid=%ls%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_syncing_folder_list&sid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_system_sid",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_system_sid&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_user_home",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_user_home&sid=%ls&user=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_user_home&sid=%s&user=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_user_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "all_user",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "refresh",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "netbios",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "domain",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filter",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_user_list&sid=%ls&user_type=%d&all_user=%d&refresh=%d&lower=%d&upper=%d&netbios=%ls&domain=%ls&filter=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_user_list&sid=%s&user_type=%d&all_user=%d&refresh=%d&lower=%d&upper=%d&netbios=%s&domain=%s&filter=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_get_veto_files",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_veto_files&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_get_veto_files&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_kickout_share",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_id",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_kickout_share&sid=%ls&event_id=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_leave_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_id",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_leave_share&sid=%ls&event_id=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_leave_share&sid=%s&event_id=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_query_notify",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_query_notify&sid=%ls&lower=%d&upper=%d%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_query_notify&sid=%s&lower=%d&upper=%d%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_remove_event",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_id",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_remove_event&sid=%ls&event_id=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_remove_event&sid=%s&event_id=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_reset_device_config",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_reset_device_config&sid=%ls&user=%ls&device_uid=%ls&mode=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_save_device_config",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "apply",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "config_number",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_save_device_config&sid=%ls&device_uid=%ls&user=%ls&apply=1",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_save_device_config&sid=%s&device_uid=%s&user=%s&apply=1&config_number=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_set_policy",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "share_policy",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_set_policy&share_policy=%d&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_set_policy&share_policy=%d&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_set_recycle_bin",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "recycle_bin",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_set_recycle_bin&recycle_bin=%d&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_set_share_member",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_set_share_member",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_set_share_member"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_share_to",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_share_to",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_share_to"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_sync_done",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_sync_done&sid=%ls&number=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_sync_start",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "channel",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_sync_start&channel=%d&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "qbox_unshare",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_unshare&sid=%ls&share_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=qbox_unshare&sid=%s&share_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "rename",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=rename&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=rename&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "repository_recovery",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "versioning_version",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=repository_recovery&sid=%s&source_file=%s&mode=%d&source_path=%s&version_id=%s&dest_path=%s&versioning_version=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "send_share_mail",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=send_share_mail&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "share_file",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=share_file&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=share_file&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "start_chunked_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=start_chunked_upload&sid=%ls&upload_root_dir=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=start_chunked_upload&sid=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "stat",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file_total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "file_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "get_privilege",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=stat&path=%ls&file_total=1&file_name=%ls&get_privilege=1%ls&sid=%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=stat&path=%ls&file_total=1&file_name=%ls&sid=%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=stat&sid=%ls&settime=1&mtime=%ls&path=%ls&file_total=1&file_name=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "trash_recovery",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "source_total",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=trash_recovery&sid=%ls&source_file=%ls&mode=%d&source_total=1&source_path=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=trash_recovery&sid=%s&source_file=%s&mode=%d&source_total=1&source_path=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "update_link",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=update_link&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "update_share_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=update_share_link&sid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=update_share_link&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=upload&sid=%ls&dest_path=%ls&overwrite=%d",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=upload&sid=%s&dest_path=%s&overwrite=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "upload_and_move",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "rename_dest",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_root_dir",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=upload_and_move&sid=%ls&settime=1&mtime=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&rename_dest=%ls&upload_root_dir=%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=upload_and_move&sid=%ls&settime=1&mtime=%ls&filesize=%ls&dest_path=%ls&overwrite=%d&upload_root_dir=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=upload_and_move&sid=%s&settime=1&mtime=%s&filesize=%s&dest_path=%s&overwrite=%d&rename_dest=%s&upload_root_dir=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_clean_version",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_clean_version&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_clean_version&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_commit_upload",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "settime",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "mtime",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_commit_upload&sid=%ls&settime=1&mtime=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_commit_upload&sid=%s&settime=1&mtime=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_gen_delta",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_gen_delta&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_gen_delta&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_gen_sig",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_gen_sig&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls&version_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_gen_sig&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_get_delta",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_get_delta&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s&offset=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_get_sig",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_get_sig&sid=%s&source_path=%s&source_file=%s&lockid=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_lock",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "check_version",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "create_version",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_lock&check_version=1&sid=%ls&source_path=%ls&source_file=%ls&version_id=%ls&lockid=%ls",
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_lock&create_version=1&sid=%ls&source_path=%ls&source_file=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_lock&check_version=1&sid=%s&source_path=%s&source_file=%s&version_id=%s&lockid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_probe",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_probe&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_stat_delta",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_stat_delta&sid=%ls&source_path=%ls&source_file=%ls&version_id=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_stat_delta&sid=%s&source_path=%s&source_file=%s&version_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_unlock",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lockid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_unlock&sid=%ls&source_path=%ls&source_file=%ls&lockid=%ls",
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_unlock&sid=%s&source_path=%s&source_file=%s&lockid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/utilRequest.cgi",
+  "func": "versioning_upload_file",
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "dest_path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "overwrite",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "version_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "versioning_version",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "source_file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "offset",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "upload_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filesize",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/filemanager/utilRequest.cgi?func=versioning_upload_file&sid=%s&dest_path=%s&overwrite=%d&version_id=%s&versioning_version=1&source_file=%s&offset=%s&upload_name=%s&filesize=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/wfm2Login.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/wfm2Login.cgi",
+   "%s%s:%d/cgi-bin/filemanager/wfm2Login.cgi"
+  ]
+ },
+ {
+  "path": "/cgi-bin/filemanager/wfm2Logout.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "logout",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/filemanager/wfm2Logout.cgi?sid=%ls&logout=1",
+   "%s%s:%d/cgi-bin/filemanager/wfm2Logout.cgi?sid=%s&logout=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "get_ad_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=get_ad_info&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=get_ad_info&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "move",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=move&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_auth_config_password",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "password",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_auth_config_password&sid=%ls&password=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_auth_config_password&sid=%s&password=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_backup_done",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_backup_done&sid=%ls&number=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_backup_start",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "channel",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_backup_start&channel=%d&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_check_backup_folder",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_check_backup_folder&sid=%ls&path=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_clean_backup_folder",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_clean_backup_folder&sid=%ls&path=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_find_share",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "file",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_find_share&sid=%ls&file=%ls&lower=%d&upper=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_fix_team_folder_link",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "type",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_fix_team_folder_link&sid=%ls&path=%ls&type=4",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_fix_team_folder_link&sid=%s&path=%s&type=4"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_cluster_node_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_cluster_node_list&sid=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_cluster_node_list&sid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_config_acl",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_config_acl&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_config_acl&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_device_config",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_device_config&sid=%ls&device_uid=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_device_config&sid=%s&device_uid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_device_config_list",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_device_config_list&sid=%ls&user=%ls&lower=%d&upper=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_nas_uid",
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_nas_uid&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_nas_uid&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_policy",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_policy&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_policy&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_recycle_bin_status",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_recycle_bin_status&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_recycle_bin_status&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_registry",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_registry&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_share_path",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_share_path&sid=%ls&share_id=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_share_path&sid=%s&share_id=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_sync_log",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "get_detail",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sub_folder",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_sync_log&sid=%ls&lower=%ls&number=%d",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_sync_log&sid=%s&lower=%s&number=%d&get_detail=1&sub_folder=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_syncing_folder_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_syncing_folder_list&sid=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_syncing_folder_list&sid=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_system_sid",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_system_sid&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_get_user_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "all_user",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "refresh",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "netbios",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "domain",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filter",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_user_list&sid=%ls&user_type=%d&all_user=%d&refresh=%d&lower=%d&upper=%d&netbios=%ls&domain=%ls&filter=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_get_user_list&sid=%s&user_type=%d&all_user=%d&refresh=%d&lower=%d&upper=%d&netbios=%s&domain=%s&filter=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_kickout_share",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_kickout_share&sid=%ls&share_id=%ls%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_query_notify",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_query_notify&sid=%ls&lower=%d&upper=%d%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_query_notify&sid=%s&lower=%d&upper=%d%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_remove_backup_folder",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_remove_backup_folder&sid=%ls&path=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_reset_device_config",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "mode",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_reset_device_config&sid=%ls&user=%ls&device_uid=%ls&mode=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_save_device_config",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "device_uid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "apply",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "config_number",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_save_device_config&sid=%ls&device_uid=%ls&user=%ls&apply=1",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_save_device_config&sid=%s&device_uid=%s&user=%s&apply=1&config_number=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_set_backup_finish_time",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "time",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_set_backup_finish_time&sid=%ls&path=%ls&time=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_set_backup_folder",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "action",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_set_backup_folder&sid=%ls&path=%ls&action=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_set_policy",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "share_policy",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_set_policy&share_policy=%d&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_set_policy&share_policy=%d&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_set_recycle_bin",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "recycle_bin",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_set_recycle_bin&recycle_bin=%d&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_sync_done",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "number",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_sync_done&sid=%ls&number=%d",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_sync_done&sid=%s&number=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_sync_start",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "channel",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_sync_start&channel=%d&sid=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_sync_start&channel=%d&sid=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_accept_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "display_name",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_accept_share&sid=%ls&display_name=%ls&share_id=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_accept_share&sid=%s&display_name=%s&share_id=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_deny_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_deny_share&sid=%ls&share_id=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_deny_share&sid=%s&share_id=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_get_info",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "path",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_info&sid=%ls&path=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_info&sid=%s&path=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_get_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "event_status",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "event_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_list&sid=%ls&event_status=0&event_type=%d&lower=%d&upper=%d%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_list&sid=%s&event_status=0&event_type=%d&lower=%d&upper=%d%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_get_member",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "user_type",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "lower",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "upper",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "all_user",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "refresh",
+    "types": [
+     "int"
+    ]
+   },
+   {
+    "name": "netbios",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "domain",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filter",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_member&sid=%ls&user_type=%d&share_id=%ls&lower=%d&upper=%d&all_user=%d&refresh=%d&netbios=%ls&domain=%ls&filter=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_get_member&sid=%s&user_type=%d&share_id=%s&lower=%d&upper=%d&all_user=%d&refresh=%d&netbios=%s&domain=%s&filter=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_leave_share",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_leave_share&sid=%ls&share_id=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_leave_share&sid=%s&share_id=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_set_member",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_set_member",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_set_member"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_share_to",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_share_to",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_share_to"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_team_folder_unshare_ex",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "share_id",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_unshare_ex&sid=%ls&share_id=%ls%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_team_folder_unshare_ex&sid=%s&share_id=%s%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "qbox_write_log",
+  "modules": [
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "filepath",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "action",
+    "types": [
+     "int"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv.cgi?func=qbox_write_log&sid=%s&filepath=%s&action=%d"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.cgi",
+  "func": "rename",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.cgi?func=rename&sid=%ls"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.fcgi",
+  "func": "login",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.fcgi?func=login"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv.fcgi",
+  "func": "logout",
+  "modules": [
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "logout",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv.fcgi?func=logout&sid=%ls&logout=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrvPrepare.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "user",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrvPrepare.cgi?user=%ls",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrvPrepare.cgi?user=%s"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv_login.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv_login.cgi",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv_login.cgi"
+  ]
+ },
+ {
+  "path": "/cgi-bin/qsync/qsyncsrv_logout.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll",
+   "QsyncAPI.dll"
+  ],
+  "params": [
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   },
+   {
+    "name": "logout",
+    "types": [
+     "const"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/cgi-bin/qsync/qsyncsrv_logout.cgi?sid=%ls&logout=1",
+   "%s%s:%d/cgi-bin/qsync/qsyncsrv_logout.cgi?sid=%s&logout=1"
+  ]
+ },
+ {
+  "path": "/cgi-bin/sysinfoReq.cgi",
+  "func": null,
+  "modules": [
+   "QFileSync.dll"
+  ],
+  "params": [
+   {
+    "name": "subfunc",
+    "types": [
+     "const"
+    ]
+   },
+   {
+    "name": "sid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%s%s:%d/cgi-bin/sysinfoReq.cgi?subfunc=info&sid=%s"
+  ]
+ },
+ {
+  "path": "/oauth/signout",
+  "func": null,
+  "modules": [
+   "Qsync.exe",
+   "QsyncAPI.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%1%2:%3/oauth/signout",
+   "%ls%ls:%d/oauth/signout"
+  ]
+ },
+ {
+  "path": "/oauth/token",
+  "func": null,
+  "modules": [
+   "Qsync.exe",
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [],
+  "raw_templates": [
+   "%1%2:%3/oauth/token",
+   "%ls%ls:%d/oauth/token",
+   "%s%s:%d/oauth/token"
+  ]
+ },
+ {
+  "path": "/oauth/tokeninfo",
+  "func": null,
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "access_token",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/oauth/tokeninfo?access_token=%ls",
+   "%s%s:%d/oauth/tokeninfo?access_token=%s"
+  ]
+ },
+ {
+  "path": "/share.cgi",
+  "func": null,
+  "modules": [
+   "Qsync.exe"
+  ],
+  "params": [
+   {
+    "name": "ssid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%1%2:%3%4/share.cgi?ssid=%5"
+  ]
+ },
+ {
+  "path": "/share.cgi",
+  "func": "get_list",
+  "modules": [
+   "QsyncAPI.dll",
+   "QsyncLib.dll"
+  ],
+  "params": [
+   {
+    "name": "ssid",
+    "types": [
+     "string"
+    ]
+   }
+  ],
+  "raw_templates": [
+   "%ls%ls:%d/share.cgi?func=get_list&ssid=%ls",
+   "%s%s:%d/share.cgi?func=get_list&ssid=%s"
+  ]
+ }
+]

@@ -1,0 +1,24 @@
+# ---- 分析环境（不入库）----
+.venv/
+__pycache__/
+*.pyc
+od-work/
+
+# ---- 从二进制逐条抽取的原始字符串转储（11 MB，且属对原作品的实质性复制）----
+# 本仓库不分发这些文件。请用 extract.py 从你自己合法获得的安装副本中重新生成：
+#   python3 extract.py
+out/str_*.txt
+
+# ---- 扫描输出 / 临时文件 ----
+probe-out/
+*.http
+*.log
+*~
+.DS_Store
+
+# ---- 若你把二进制或安装包放在仓库内，一律不要提交 ----
+*.exe
+*.dll
+*.msi
+*.zip
+Qsync/

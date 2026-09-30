@@ -1,0 +1,130 @@
+共 43 个解析器
+
+=== CAuth1Json   [QFileSync.dll]
+   server_busy, auth_data, iv
+
+=== CAuth2Json   [QFileSync.dll]
+   share_folder_sid
+
+=== CAuthConfigPasswordJson   [QsyncLib.dll]
+   time_error, email_error
+
+=== CAuthLoginXml   [QFileSync.dll,QsyncLib.dll]
+   access_token_ret, remain, pw_expiry, permission_deny, authSid, authPassed, account_login_restricted, username, suid, cuid, displayModelName, modelName, number, passwordless_login, function_support, lost_phone, need_2sv, force_2sv, need_2_step_verification, emergency_try_limit, emergency_try_count, security_code_en, qrcode_en, vcode_en, approve_login_en, pI, home, home_folder_available
+
+=== CGenVersioningSigJson   [QFileSync.dll]
+   local_user_uid, computer_name
+
+=== CGetConfigACLInfoJson   [QsyncLib.dll]
+   section, config, all, _2
+
+=== CGetConfigItemInfoJson   [QsyncLib.dll]
+   parent_id, receiver_number, original_path, target_name, team_folder
+
+=== CGetConfigNotifyItemInfoJson   [QsyncAPI.dll,QsyncLib.dll]
+   event_time, event_modifier, event_value, device_name, device_uid, ip, modify_time, myqnapcloud_link_status, mycloudnas_hn, ddns_hn, host_ip, ddns_hn_list, myqnapcloud_ddns_status, qid, myqnapcloud_device_name, ip_list, version, ip_addr, ip_type, external_ip, local_ip, ddns_list, hostname, provider, myQNAPcloud, local_ip_list, port, sslPort, extPort, extSslPort, thumbnail, filename, event_type, event_user, event, duid
+
+=== CGetDomainIPListJson   [QFileSync.dll,QsyncLib.dll]
+   mycloudnas_hn, ddns_hn, host_ip, ddns_hn_list, myqnapcloud_link_status, myqnapcloud_ddns_status, qid, myqnapcloud_device_name, ip_list, ip_addr, ip_type, external_ip, local_ip, ddns_list, provider, myQNAPcloud, local_ip_list, port, sslPort, extPort, extSslPort, qbox_function_enable, qbox_user_enable, home_is_exist, team_folder_is_exist, qbox_cluster_support, qbox_cluster_status, qbox_cluster_slave_id
+
+=== CGetFolderInfoJson   [QFileSync.dll,QsyncAPI.dll]
+   external, iconCls, s6, cls, s5, text, sw, versioning_support, privilege_ex, email_download_link, create_download_link, forever, specific_time, period_of_time, internet, local, target_number, user_number, sn, true, valid_duration, datetime, ht, ssl, new_share, download_type, addressee, subject, content, access_enabled, include_access_code, network_type, share_ssid, mail_content_pwd, ssids, option, mail_content_date, folder_number, template, config_number, password, Pv, Connection, PUT, HEAD, DELETE, Pragma, rue, alse, ull, AaAbBcCdDeFgGhHIjmMnprRStTuUVwWxXyYzZ, bytes, Config, Synchronize, Policy, Mails, pB, Dw, xw, Px
+
+=== CGetInternalConfigItemInfoJson   [QsyncLib.dll]
+   LAN_connect_waiting_ms_time, LAN_connection_idle_sec_time, check_empty_folder, LAN_period_broadcast_sec_time, LAN_sync_port, download_engine_num, LAN_udp_engine_num, LAN_sync_min_size, LAN_max_busy_count, enable_LAN_sync, copying
+
+=== CGetMoveStatusJson   [QFileSync.dll,QsyncAPI.dll,QsyncLib.dll]
+   percent, percentage, model, fw_version, queue_num_limit, msg_queue_num_limit, home_folder_enable, recycle_bin_enable, device_db_exist, log_db_exist, share_db_exist, qbox_versioning_enable, versioning_enable, versioning_version, user_enable, is_recovering, home_folder_available, Max_File_List, datas, isfolder, epochmt, have_child, exist, privilege, qbox_type, qbox_share_id, filesize, qbox_function_enable, qbox_user_enable, home_is_exist, team_folder_is_exist, qbox_cluster_support, qbox_cluster_status, qbox_cluster_slave_id, max_log, notify, global_notify, sync_signal, file_exist, error_code, auth_pass, token_type, error_description, expires_in, cloud_link_p2p, cloud_link_id, cloud_link, resources, wan_ip
+
+=== CGetNASStatusJson   [QsyncLib.dll]
+   device_db_exist, home_folder_enable, share_db_exist, log_db_exist, user_enable
+
+=== CGetPathInfoJson   [QFileSync.dll]
+   total, datas, epochmt, exist, versioning_support, privilege_ex, error_code, auth_pass
+
+=== CGetQsyncShareFileInfoJson   [QsyncAPI.dll,QsyncLib.dll]
+   share_id_status, nas_id, end, number, filepath, log_id, action, old_filepath, user, share_member, description, qsyncuser, share_path, Byte, KB, MB, GB, TB, PB, EB, client_key, folder, path, read_deletable, volume_lock, volume_encrypt, lock, enc, fkey, used_unit, used_size, capacity_unit, capacity, free_size, volume_id, realpath, slave, slave_id, permission, upload_id, files, home, volume_free_size, volume_total_size, quota_enable, quota, quota_size, used_quota_size, avaiable_quota_size, vol_id, build, lockid, PZ, link_name, expire_time, multiple, ssid, links, link_url, protocol
+
+=== CGetQsyncSyncLogJson   [QsyncLib.dll]
+   old_mtime, old_exist, mtime
+
+=== CGetShareMemberListJson   [QsyncLib.dll]
+   share_member, LAN_client_idle_connection, LAN_search_engine_max_thread, LAN_sync_thread, LAN_server_idle_connection
+
+=== CGetSyncingFolderListJson   [QsyncLib.dll]
+   EB, PB, volume_lock, read_deletable, folder, client_key, fkey, enc, lock, volume_encrypt, capacity, capacity_unit, used_size, used_unit, slave, realpath, volume_id, free_size, permission, slave_id, pid
+
+=== CGetTrashRecoveryJson   [QsyncLib.dll]
+   recycle_bin_enable, event_action, event_duid
+
+=== CGetUploadChunkResultJson   [QFileSync.dll]
+   files
+
+=== CGetUploadIDJson   [QFileSync.dll]
+   upload_id
+
+=== CGetUserHomePathJson   [QFileSync.dll]
+   home_folder_available
+
+=== CGetUserQuotaJson   [QsyncLib.dll]
+   used_quota_size, quota_size, quota, quota_enable, vol_id, avaiable_quota_size
+
+=== CGetVersioningLockResultJson   [QFileSync.dll]
+   lockid, version_id, admingroup, servername, security_question_no, security_question_text, system_question_text, folder
+
+=== CGetandCreateLinkJson   [QsyncLib.dll]
+   ssid, multiple, links, x2
+
+=== CQIDGetAllDeviceInfoJson   [QsyncLib.dll]
+   device_id, token, device_name, permissions, nickname, user_name, service_name, info, local_services, local_users, model_info, device_type, model_name, fw_model_name, hw_serial_number, uri, external_port, internal_port, published, firmware_patch_version, agent_version, firmware_number, region, fw_serial_number, mac_address, host_name, firmware_build_number, lan_gateway, lan_ips, wan_ips, latest_fw_version, GLB, CHN, HERO, firmware_version, remote_access, public_local_service, private_local_service, public_package_services, latest_fw_build_number, latest_fw_patch_version, img_url, basic_info, protected_package_services, private_package_services, qbox_type, public_ip, passwordless_en, password_en, max_log, notify, global_notify
+
+=== CQIDGetCloudLinkInfoJson   [QsyncAPI.dll,QsyncLib.dll]
+   wan_ip, ddns, lan_ip, deviceId, display_name, email, protocol, tunnel, host, ipv6, ipv4, device, network, status_code, geo_info, P1, admingroup, security_question_text, security_question_no, system_question_text, Z1, user_id, _1
+
+=== CQsyncGetMaxLogJson   [QsyncLib.dll]
+   sync_signal, slowdown_seconds, R2
+
+=== CQsyncGetNASStaticInfoJson   [QFileSync.dll]
+   queue_num_limit, fw_version, msg_queue_num_limit
+
+=== CQsyncLogin   [QFileSync.dll,QsyncAPI.dll]
+   ext_ip, ddns_dn, enableACL, home_section_fail, qbox_slave_id, QDocRoot, ownContent, QsyncServer, qItem, enable, attr, TRUE, build, private, have_child, Max_File_List, qbox_share_id, qbox_type, readonly, mycloudnas_dn, ADSupport, TrustedDomainEnable, domain, netbios, target_name, date, time, team_folder, owner, parent_id, original_path, receiver_number, receiver, share_policy, copying, is_booting, user_type, Qsync_version, is_migrating, qbox_cgi, fcgi, UID, SUID, MAC0, policy, max_share_file, download_link, creator, comp, msg, Accept, Authorization, grant_type, client_id, client_secret, client_credentials, pwd, qbox_user, qbox_computer, uid
+
+=== CShareGetAdInfoJson   [QsyncLib.dll]
+   netbios, TrustedDomainEnable
+
+=== CShareGetPathJson   [QsyncLib.dll]
+   share_path, auth_result
+
+=== CShareGetProgressJson   [QFileSync.dll,QsyncLib.dll]
+   copying, rue, ull, alse, PX, PZ, PN, pow, Vd, Ohe, rr, tLVv, dH, YL, jU, Xq, _D, s7, Pi, pt, nB, OO, n0, E7D, rJ, w3, FE, o6, Ugc, UZ, Vm, jx, H0, Vb, iI, KS, Of, xm, cE, yQ, PS, K_, bB, WU, Qv, FK, dw, qs, uE, zIq, CE, Bn, pC, La8i, mg, uc, La, Ai0T, Wq, uI
+
+=== CShareGetTeamFolderJson   [QsyncLib.dll]
+   receiver, download_link, max_share_file, creator
+
+=== CShareGetUIDJson   [QFileSync.dll,QsyncLib.dll]
+   is_booting, user_type, Qsync_version, is_migrating, is_recovering, is_backuping_restoring, qbox_cgi, UID, versioning_version, Qsync_qpkg_version, fcgi, SUID, CUID, MAC0, DisableFastCGI, volume_total_size, volume_free_size
+
+=== CShareGetUserListJson   [QsyncLib.dll]
+   qsyncuser, policy, share_policy
+
+=== CShareLinkListJson   [QsyncLib.dll]
+   ADSupport
+
+=== CShareToJson   [QFileSync.dll,QsyncLib.dll]
+   mycloudnas_dn, PTRUE, qbox_versioning_enable, versioning_enable, access_control_mode, description, domain_name, organization_name
+
+=== CWebFileManFileProcessJson   [QFileSync.dll]
+   pid
+
+=== CWebFileManGetLinkXml   [QsyncLib.dll]
+   action, log_id, old_size, old_filepath, filepath
+
+=== CWebFileManGetResultJson   [QFileSync.dll,QsyncLib.dll]
+   Pt, send_result, text, message, er, thumbnail
+
+=== CWebFileManLogin   [QFileSync.dll]
+   pJ
+
+=== dCWFMStatusResultJson   [QFileSync.dll]
+   model
